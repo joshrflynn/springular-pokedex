@@ -1,0 +1,10 @@
+@if (loading) {
+<div>Loading...</div>
+} @else {
+<div id="card_container">
+  @for (p of pokemonList; track p.id) {
+
+  <app-pokemon-card [pokemon]="p"></app-pokemon-card>
+  }
+</div>
+}
